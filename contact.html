@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<meta charset="UTF-8">
+<head><title>Page de contact Jarditout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+    @media screen and (max-width: 768px){ body{font-size:small;} #colonne2{ display:none;} .noir{flex-direction:column;}   
+}
+    .noir{
+        display:flex;
+        flex-direction: row;
+        justify-content:flex-start;
+        background-color:black;
+        padding: 2px 2px 2px 2px;
+        border: 2px white;
+        align-items:center;
+        height:60px;
+        width:100%;
+        }
+        li{display:inline;
+        list-style:none;
+        margin: 2px;}
+        a{color: white;}
+        #slogan{display: flex;
+        flex-direction: row;
+        justify-content:center;
+        font-size:32px;}
+        #gauche{float:left;}
+        #promo{width:100%;
+        height:200px;}
+        #colonne1{flex:1;
+        width: 80%}
+        #colonne2{
+        flex:1;
+        background-color:lightgrey;
+        color:white;
+        font-family:'Courier New', Courier, monospace;
+        padding:1em;
+        width: 20%;
+        }
+        #blocgéné{display:flex;}
+        </style>
+</head>
+<body>
+<header><div id="gauche"> <img src="jarditou_logo.jpg" height="70" width="300"></div>
+<p id="slogan">La qualité depuis 70 ans</p>
+</header>
+<nav class="noir">
+<ul>
+<li><a href="accueil.html">Accueil</a></li>
+<li><a href="tableau.html">Tableau</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+<br>
+<header>
+ <img id="promo" src="promotion.jpg" alt="Promotion Jarditout">
+</header>
+<div id="blocgéné">
+<div id="colonne1">
+<form action="http://bienvu.net/script.php" method="get">
+    <p>*Ces zones sont obligatoires</p>
+    <fieldset>
+        <legend>Vos coordonnées</legend>
+        <label for="nom">Votre nom*: </label><input type="text" name="nom" id="nom"><br>
+        <label for="prénom">Votre prénom*: </label><input type="text" name="prénom" id="prénom"><br><br>
+        <label for="sexe">Sexe*: </label><br><br><input type="radio" name="sexe" value="Féminin">Féminin<input type="radio" name="sexe" value="Masculin">Masculin<br>
+        <label for="date de naissance">Date Naissance*: </label><input type="text" name="date de naissance" id="date naissance" value="jj/mm/aaaa"><br>
+        <label for="code postal">Code postal: </label><input type="text" name="code postal" id="code postal"><br>
+        <label for="adresse">Adresse: </label><input type="text" name="adresse" id="adresse"><br>
+        <label for="ville">Ville: </label><input type="text" name="ville" id="ville"><br>
+        <label for="email">Email*: </label><input type="text" name="email" id="email" value="dave.loper@afpa.fr"><br>
+
+    </fieldset>
+    <fieldset>
+        <legend>Votre demande</legend>
+        <label for="sujet">Sujet*: </label><select name="sujet" size="1">
+        <option>Mes commandes</option>
+        <option>Question sur un produit</option>
+        <option>Réclamation</option>
+        <option>Autre</option>
+        </select><br>
+        <label for="votre question">Votre question*: </label><textarea name="votre question" rows="4" cols="20"></textarea>
+    </fieldset><br><br>
+    <input type="checkbox" name="acceptation" value="acceptation">J'accepte le traitement informatique de ce formulaire.<br><br>
+<button type="submit">Envoyer</button><button type="reset">Annuler</button>
+</form>
+</div>
+<div id="colonne2">[COLONNE 2]</div>
+</div>
+<hr>
+<footer>
+<nav class="noir">
+<ul>
+<li><a href="mentionslegales.html">Mentions légales</a></li>
+<li><a href="horaires.html">Horaires</a></li>
+<li><a href="plandusite.html">Plan du site</a></li>
+</ul>
+</nav>
+</footer>
+</body>
+</html>

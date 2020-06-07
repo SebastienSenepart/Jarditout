@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<meta charset="UTF-8">
+<head><title>Page d'accueil Jarditout</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+<style>
+@media screen and (max-width: 768px){ body{font-size:small;} #colonne2{ display:none;} .noir{flex-direction:column;}   
+}
+.noir{
+display:flex;
+flex-direction: row;
+justify-content:flex-start;
+background-color:black;
+padding: 2px 2px 2px 2px;
+border: 2px white;
+align-items:center;
+height:60px;
+width:100%;
+}
+li{display:inline;
+list-style:none;
+margin: 2px;}
+a{color: white;}
+#slogan{display: flex;
+flex-direction: row;
+justify-content:center;
+font-size:32px;}
+#gauche{float:left;}
+#promo{width:100%;
+height:200px;}
+#colonne1{flex:1;
+width: 80%}
+#colonne2{
+flex:1;
+background-color:lightgrey;
+color:white;
+font-family:'Courier New', Courier, monospace;
+padding:1em;
+width: 20%;
+}
+#blocgéné{display:flex;}
+</style>
+</head>
+<body>
+<header><div id="gauche"><img src="jarditou_logo.jpg" height="60" width="200" alt="Logo Jarditout"></div>
+<p id="slogan">La qualité depuis 70 ans</p>
+</header>
+<nav class="noir">
+<ul>
+<li><a href="accueil.html">Accueil</a></li>
+<li><a href="tableau.html">Tableau</a></li>
+<li><a href="contact.html">Contact</a></li>
+</nav>
+</ul>
+<br>
+<header>
+ <img id="promo" src="promotion.jpg" alt="Promotion Jarditout">
+</header>
+<div id="blocgéné">
+<div id="colonne1">
+<section>
+<h1>Accueil</h1>
+<hr>
+<article>
+<h3>L'entreprise</h3>
+<p>Notre entreprise familiale met tout son savoir-faire à votre disposition dans le domaine du jardin et du paysagisme.</p>
+<p>Créée il y a 70 ans, notre entreprise vend fleurs, arbustes, matériel à main et motorisés.</p>
+<p>Implantés à Amiens, nous intervenons dans tout le département de la Somme : Albert, Doullens, Péronne, Abbeville, Corbie.</p>
+</article>
+</section>
+<section>
+<article>
+<h3>Qualité</h3>
+<p>Nous mettons à votre disposition un service personnalisé, avec 1 seul interlocuteur durant tout votre projet.</p>
+<p>Vous serez séduit par notre expertise, nos compétences et notre sérieux.</p>
+</article>
+<article>
+<h3>Devis gratuit</h3>
+<p>Vous pouvez bien sûr contacter pour de plus amples informations ou pour une demande d’intervention. Vous souhaitez un devis ? Nous vous le réalisons gratuitement.</p>
+</article>
+</section>
+</div>
+<div id="colonne2">[COLONNE 2]</div>
+</div>
+<hr>
+<footer>
+<nav class="noir" clear="both">
+<ul>
+<li><a href="mentionslegales.html">Mentions légales</a></li>
+<li><a href="horaires.html">Horaires</a></li>
+<li><a href="plandusite.html">Plan du site</a></li>
+</ul>
+</nav>
+</footer>
+</body>
+</html>
+
